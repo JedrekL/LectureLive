@@ -10,10 +10,34 @@
 		if (args.detail.kind === activation.ActivationKind.launch) {
 			if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
 			    // TODO: This application has been newly launched. Initialize your application here.
-			    //Create server: ServerSocket server = new ServerSocket(PORT);
-			    //Client then Connects: Socket connectionToTheServer = new Socket("localhost", 8888); 
-			    //          First param: server-address, Second: the port
-			    //Server Accepts the connection: Socket connectionToTheClient = server.accept();
+
+			    //Define variables
+			    var emotes = [Bored, Happy, Confused, Neutral];
+                var Bored = {count:0}; 
+                var Happy = {count:0};
+                var Confused = {count:0};
+                var Neutral = {count:0};
+                var out = null;
+
+
+			    //Create server: 
+			    //ServerSocket studentServer = new ServerSocket(8888);
+			    //Client then Connects: 
+			    //Socket connectionToTheServer = new Socket("localhost", 8888); //First param: server-address, Second: the port
+			    //Server Accepts the connection: 
+			    //Socket connectionToTheClient = server.accept();
+
+                //Test the connection:
+			    //OutputStream out = yourSocketHere.getOutputStream();
+			    
+
+
+			    //PrintStream ps = new PrintStream(out, true); // Second param: auto-flush on write = true
+			    //ps.println("Hello, Other side of the connection!");
+			    //
+
+
+                //var storage = new JSON.
 
 
 			} else {
