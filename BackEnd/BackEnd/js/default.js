@@ -19,7 +19,6 @@
                 var Neutral = {count:0};
                 var out = null;
 
-
 			    //Create server: 
 			    //ServerSocket studentServer = new ServerSocket(8888);
 			    //Client then Connects: 
@@ -35,7 +34,6 @@
 			    //PrintStream ps = new PrintStream(out, true); // Second param: auto-flush on write = true
 			    //ps.println("Hello, Other side of the connection!");
 			    //
-
 
                 //var storage = new JSON.
 
