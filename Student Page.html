@@ -1,44 +1,89 @@
 <!DOCTYPE html>
 <html>
-<style type = "text/css">
-  #logo {
-	position: fixed;
-	top: 40%;
-	left: 40%;
-    text-align: center;
-  }
-  #button1 {
-    position: absolute;
-    top: 55%;
-	left: 25%;
-    width: 300px;
-    height: 70px;
-    background-color: black;
-	text-align: center;
-  }
-  
-  #button1:hover {
-	background-color: gray;
-  }
-  
-  #button2 {
-    position: absolute;
-    top: 55%;
-	right: 25%;
-    width: 300px;
-    height: 70px;
-    background-color: black;
-	text-align: center;
-  }
-  
-  #button2:hover {
-	background-color: gray;
-  }
-</style>
-	<center>
-		<div id="logo" align="center"><font size="300"><font face="Georgia"><center>Lecture Live</center></face></size></div>
-	</center>
-  <div id="button1"><font color>what</div>
-  <div id="button2">what</div>
-<html>
+<head>
+<style> 
 
+input[type=text] {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid black;
+    background-color: #FFFFFF;
+    color: black;
+	position: absolute;
+	top: 53%;
+	left: 38%;
+}
+
+#entertext {
+	position: absolute;
+	color: white;
+	top: 43%;
+	left: 41%;
+	text-align: center;
+}
+#dialoguebody {
+    position: absolute;
+	width: 350px;
+	height: 300px;
+	background-color: #0ea7b5;
+	top: 260px;
+	left: 495px;
+}
+
+#dialoguebodyshadow {
+    position: absolute;
+	width: 350px;
+	height: 300px;
+	background-color: #0c457d;
+	top: 285px;
+	left: 495px;
+}	
+
+#dialoguetriangle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 80px 40px 0 40px;
+	border-color: #0ea7b5 transparent transparent transparent;
+	top: 560px;
+	left: 630px;
+	}
+
+#dialoguetriangleshadow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 100px 50px 0 50px;
+	border-color: #0c457d transparent transparent transparent;
+	top: 580px;
+	left: 620px;
+	}
+	
+#logo {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+#studentdec {
+	position: absolute;
+	top: 216px;
+	left: 550px;
+	color: #0ea7b5;
+}
+</style>
+<div id="logo"><img src="https://raw.githubusercontent.com/JedrekL/LectureLive/master/LECTURE%20LIVE%20LOGO.jpg" height="20%" width="20%"></div>
+<div id="dialoguetriangleshadow"></div>
+<div id="dialoguebodyshadow"></div>
+<div id="dialoguebody"></div>
+<div id="dialoguetriangle"></div>
+<div id="entertext"><font face="Segoe"><font size="6">Enter Class PIN</div>
+<form>
+  <input type="text" id="PIN" name="PIN">
+</form>
+<div id="studentdec"><b><font size="10">STUDENT</div>
+</html>
