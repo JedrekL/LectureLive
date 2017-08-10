@@ -1,5 +1,5 @@
 # LectureLive
-It's a live lecture yo.
+Live Lecture is a webapp that allows an audience to provide active feedback to a presenter in real-time. 
 
 # Current Goal:
-Homepage and buttons that are lit yo. #lit #420 #downloadgooglechrome
+Homepage and buttons and other UIs. Server-Client System. 
