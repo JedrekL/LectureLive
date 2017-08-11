@@ -7,9 +7,9 @@ namespace LectureLiveWebAPI
 {
     public class studentResponse
     {
-        int response;
-        DateTime timestamp;
-        bool expired;
+        public int response;
+        public DateTime timestamp;
+        public bool expired;
         
     }
 }

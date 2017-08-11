@@ -21,21 +21,9 @@ namespace LectureLiveWebAPI.Controllers
         // GET api/student/5
         public string Get(int id)
         {
-            string database;
-            if (File.Exists(databaseFile))
-            {
-                database = File.ReadAllText(databaseFile);
-            }
-            else
-            {
-                database = "";
-            }
 
-            database = database + id + Environment.NewLine;
-
-            File.WriteAllText(databaseFile, database);
-
-            return "pick " + id;
+            return null;
+            
         }
 
         // POST api/student

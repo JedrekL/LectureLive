@@ -125,6 +125,7 @@
     <Content Include="Student Page.html" />
     <Content Include="StudentVotePage.html" />
     <Content Include="Teacher Page.html" />
+    <Content Include="TeacherVotePage.html" />
     <Content Include="Web.config" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">

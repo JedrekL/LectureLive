@@ -10,10 +10,12 @@ namespace LectureLiveWebAPI.Controllers
     public class ClassController : ApiController
     {
         Dictionary<string, List<studentResponse>> globalDictionary = null;
-         
+        
+
         // GET: api/Class
         public IEnumerable<string> Get()
         {
+
             //Create a classroom
             Random rng = new Random();
             string classId = rng.Next(111, 999).ToString();
@@ -35,32 +37,23 @@ namespace LectureLiveWebAPI.Controllers
                 {
                     globalDictionary.Add(sR.className, sR.resp);
                 }
-
             }
             else
             {
                 new Dictionary<string, List<studentResponse>>();
             }
-            
-            if()
-            classResponses.Add(sR.className, sR.resp);
-
-            //Collect responses
-            if (classResponses.)
-                {
-                classResponses[classId].response.Add();
-                }
-
-
-            return new string[] { "value1", "value2" };
-
-            
+            return new string[] { classId };
+           
         }
 
         // GET: api/Class/5
         public string Get(int id)
         {
-            return "value";
+            studentResponse newResponse = new studentResponse();
+            newResponse.response = id;
+            
+
+            return null;
         }
 
         // POST: api/Class

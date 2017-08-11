@@ -8,38 +8,50 @@
 <center>
 
 <!-- Title -->
-<h1> Student View </h1>
-<form action="savevote.php" method="get">
+<h1><big> Student View </big></h1>
+
+
+<form action="studentvotepage.html" method="get">
+<script>
+    function studentChoice(choice)
+    {
+    var req = new XMLHttpRequest();
+    req.open("GET", "/api/Class/" + choice, false);
+    req.send(null);
+    }
+</script>
+    
 
 <!-- Table for emojis --> 
-<table border="0" cellspacing="1" cellpadding="0" width="600" height="400">
+<table border="0" cellspacing="1" cellpadding="0" width="800" height="500">
     <tr>
         <td align="center"> 
-		<input type="radio" name="emoji" value="depressed" checked> <img src="depression.jpg" height = "100" width="100">
+		<input type="image" src="tired.png" name="emoji" class="btTxt submit" id="emoji" height = "170" width="200" value="bored" onclick="studentChoice(2)"/>
+		
 	</td>
         <td align="center" > 
-		<input type="radio" name="emoji" value="evil"><img src="evil.png" height = "100" width="100">
+		<input type="image" src="neutral.png" name="emoji" class="btTxt submit" id="emoji" height = "170" width="200" value="neutral" onclick="studentChoice(1)"/>
+		
 	</td> 
         
     </tr>
 <tr>
         <td align="center"> 
-		<input type="radio" name="emoji" value="hi"><img src="hi.png" height = "100" width="100">
-	</td>
+		<input type="image" src="confused.png" name="emoji" class="btTxt submit" id="emoji" height = "170" width="200" value="confused" onclick="studentChoice(3)"/>
+    </td>
         <td align="center"> 
-		<input type="radio" name="emoji" value="no"><img src="no.jpg" height = "100" width="100">
-	</td>
-        
+		<input type="image" src="happy.png" name="emoji" class="btTxt submit" id="emoji" height = "170" width="200" value="smile" onclick="studentChoice(4)"/>
+            
+    </td>
+    
+    
+      
 </tr>
            
                   
 </table>
 
-<!-- Comment place -->
 
-
-  Comment: <input type="text" name="comment" size="100"><br>
-  <input type="submit" value="Submit">
 
 </form>
 </center>  

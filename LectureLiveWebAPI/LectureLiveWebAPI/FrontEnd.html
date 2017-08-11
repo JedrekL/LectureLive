@@ -10,7 +10,7 @@
     function studentChoice(choice)
     {
         var req = new XMLHttpRequest();
-        req.open("GET", "/api/student/" + choice, false);
+        req.open("GET", "/api/Class/" + choice, false);
         req.send(null);
     }
     function teacherInfo() {
@@ -19,6 +19,13 @@
         req.send(null);
         var statusText = req.responseText;
         document.getElementById("statusText").innerHTML = "Loaded: " + statusText;
+    }
+    function createClass() {
+        var req = new XMLHttpRequest();
+        req.open("GET", "/api/Class/", false);
+        req.send(null);
+        var replyText = req.responseText;
+        document.getElementById("replyText").innerHTML = "Created Class with Number " + replyText;
     }
     </script>
 
@@ -32,6 +39,9 @@
     <button onclick="teacherInfo()">Show</button>
     <div id="statusText"></div>
 
+    <h3></h3>
+    <button onclick="createClass()">Create Class</button>
+    <div id="replyText"></div>
 
 </body>
 </html>
