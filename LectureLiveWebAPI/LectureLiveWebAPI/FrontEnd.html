@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <script>
+    function studentChoice(choice)
+    {
+        var req = new XMLHttpRequest();
+        req.open("GET", "/api/student/" + choice, false);
+        req.send(null);
+    }
+    function teacherInfo() {
+        var req = new XMLHttpRequest();
+        req.open("GET", "/api/teacher/", false);
+        req.send(null);
+        var statusText = req.responseText;
+        document.getElementById("statusText").innerHTML = "Loaded: " + statusText;
+    }
+    </script>
+
+    <h3>Student Choices</h3>
+    <button onclick="studentChoice(1)">1</button>
+    <button onclick="studentChoice(2)">2</button>
+    <button onclick="studentChoice(3)">3</button>
+    <button onclick="studentChoice(4)">4</button>
+
+    <h3>Teacher Status</h3>
+    <button onclick="teacherInfo()">Show</button>
+    <div id="statusText"></div>
+
+
+</body>
+</html>
