@@ -9,25 +9,29 @@
 
 <!-- Title -->
 <h1> Student View </h1>
+
+
 <form action="savevote.php" method="get">
 
 <!-- Table for emojis --> 
 <table border="0" cellspacing="1" cellpadding="0" width="600" height="400">
     <tr>
         <td align="center"> 
-		<input type="radio" name="emoji" value="depressed" checked> <img src="depression.jpg" height = "100" width="100">
+		<input type="image" src="depression.jpg" name="emoji" class="btTxt submit" id="emoji" height = "100" width="100" value="confused"/>
+		
 	</td>
         <td align="center" > 
-		<input type="radio" name="emoji" value="evil"><img src="evil.png" height = "100" width="100">
+		<input type="image" src="evil.png" name="emoji" class="btTxt submit" id="emoji" height = "100" width="100" value="sleepy"/>
+		
 	</td> 
         
     </tr>
 <tr>
         <td align="center"> 
-		<input type="radio" name="emoji" value="hi"><img src="hi.png" height = "100" width="100">
+		<input type="image" src="hi.png" name="emoji" class="btTxt submit" id="emoji" height = "100" width="100" value="happy"/>
 	</td>
         <td align="center"> 
-		<input type="radio" name="emoji" value="no"><img src="no.jpg" height = "100" width="100">
+		<input type="image" src="no.jpg" name="emoji" class="btTxt submit" id="emoji" height = "100" width="100" value="meh"/>
 	</td>
         
 </tr>
@@ -35,11 +39,7 @@
                   
 </table>
 
-<!-- Comment place -->
 
-
-  Comment: <input type="text" name="comment" size="100"><br>
-  <input type="submit" value="Submit">
 
 </form>
 </center>  
