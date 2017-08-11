@@ -17,5 +17,7 @@ namespace LectureLiveWebAPI.Controllers
         {
             return File.ReadAllLines(databaseFile);
         }
+
+
     }
 }

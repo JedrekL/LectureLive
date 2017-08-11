@@ -119,8 +119,12 @@
   <ItemGroup>
     <Content Include="FrontEnd.html" />
     <Content Include="Global.asax" />
+    <Content Include="homepage.html" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Student Page.html" />
+    <Content Include="StudentVotePage.html" />
+    <Content Include="Teacher Page.html" />
     <Content Include="Web.config" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -131,6 +135,9 @@
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Class Responses.cs" />
+    <Compile Include="ClassId.cs" />
+    <Compile Include="Controllers\ClassController.cs" />
     <Compile Include="StudentResponses.cs" />
     <Compile Include="Student Response.cs" />
     <Compile Include="Controllers\StudentController.cs" />
