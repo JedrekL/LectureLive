@@ -9,15 +9,47 @@ namespace LectureLiveWebAPI.Controllers
 {
     public class ClassController : ApiController
     {
+        Dictionary<string, List<studentResponse>> globalDictionary = null;
+         
         // GET: api/Class
         public IEnumerable<string> Get()
         {
-            //string classid = Random.Next(111,999).ToString();
-            //Responses sR = new Responses();
-            //sR.classStarted = DateTime.Now();
-            //sR.resp = new List<studentResponse>();
-            //Dictionary<string, studentResponse> classResponses;
+            //Create a classroom
+            Random rng = new Random();
+            string classId = rng.Next(111, 999).ToString();
+            Responses sR = new Responses();
+            DateTime time = new DateTime();
+            sR.classStarted = time.Ticks;
+            sR.resp = new List<studentResponse>();
+            sR.className = classId;
+
+            List<studentResponse> list;
+            Dictionary<string, List<studentResponse>> classResponses = globalDictionary;
+            if (classResponses != null)
+            {
+                classResponses.TryGetValue(classId, out list);
+                if(list != null)
+                {
+                    
+                } else
+                {
+                    globalDictionary.Add(sR.className, sR.resp);
+                }
+
+            }
+            else
+            {
+                new Dictionary<string, List<studentResponse>>();
+            }
             
+            if()
+            classResponses.Add(sR.className, sR.resp);
+
+            //Collect responses
+            if (classResponses.)
+                {
+                classResponses[classId].response.Add();
+                }
 
 
             return new string[] { "value1", "value2" };

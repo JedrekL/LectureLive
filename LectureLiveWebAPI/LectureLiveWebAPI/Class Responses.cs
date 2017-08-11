@@ -7,6 +7,6 @@ namespace LectureLiveWebAPI
 {
     public class Class_Responses
     {
-        Dictionary<classId,studentResponse> classDict;
+        //Dictionary<classId,studentResponse> classDict;
     }
 }

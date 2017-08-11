@@ -15,7 +15,9 @@ namespace LectureLiveWebAPI.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
+            
             return File.ReadAllLines(databaseFile);
+
         }
 
 

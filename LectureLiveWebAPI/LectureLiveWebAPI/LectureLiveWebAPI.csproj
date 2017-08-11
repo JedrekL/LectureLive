@@ -136,7 +136,6 @@
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Class Responses.cs" />
-    <Compile Include="ClassId.cs" />
     <Compile Include="Controllers\ClassController.cs" />
     <Compile Include="StudentResponses.cs" />
     <Compile Include="Student Response.cs" />

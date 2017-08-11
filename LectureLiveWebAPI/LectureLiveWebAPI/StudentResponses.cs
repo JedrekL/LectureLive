@@ -8,7 +8,7 @@ namespace LectureLiveWebAPI
     public class Responses
     {
         public List<studentResponse> resp;
-        public DateTime classStarted;
+        public long classStarted;
         public string className;
     }
 }
